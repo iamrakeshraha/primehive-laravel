@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>primehive</title>
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- /header start -->
+			<header class="top-header">
+				<div class="center">
+					<a href="index.html" class="logo"><img src="images/primhivelogo.png" alt=""></a>
+					<div id="toggle">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+					<div id="menu" class="header-signup-pannel">
+						<a href="javascript:void(0)" title="">My Request</a>
+						<a href="javascript:void(0)" title="" class="profile-btn">
+							<div class="default-avatar">S</div> Profile Name
+							<span class="bark-svg-icon bsi-primary-grey-200 bsi-xxs d-inline-block arrow-down-svg ml-1"><!--?xml version="1.0" encoding="UTF-8"?-->
+								<svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <g id="Guide-" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Style-Guide" transform="translate(-344.000000, -10881.000000)">
+								            <g id="Icons/Illustrations" transform="translate(115.000000, 10318.000000)">
+								                <g id="Icons" transform="translate(22.000000, 242.000000)">
+								                    <g id="Icon/arrow_down" transform="translate(206.000000, 320.000000)">
+								                        <g id="arrow_down">
+								                            <rect id="base" fill-rule="nonzero" x="0" y="0" width="12" height="8"></rect>
+								                            <path d="M6.63460593,6.744 C6.28160593,7.084 5.75960593,7.085 5.40560593,6.748 L1.33160593,2.863 C0.934605927,2.484 0.887605927,1.818 1.22560593,1.374 C1.40460593,1.139 1.66760593,1.003 1.94360593,1.003 L10.0556059,1 C10.5766059,1 10.9996059,1.472 10.9996059,2.056 C11.0006059,2.363 10.8796059,2.655 10.6716059,2.856 L6.63460593,6.744 Z" id="arrow-down" class="primary-color"></path>
+								                        </g>
+								                    </g>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+							</span>							
+						</a>
+					</div>
+					<div class="dropdown-profile">
+                        <a class="dropdown-item-link" href="#">Notifications</a>
+                        <a class="dropdown-item-link" href="#">Account settings</a>
+                        <a class="dropdown-item-link" href="#">Log Out</a>
+                    </div>
+				</div>
+			</header>
+			<!-- /header end -->
+			<div class="main-section">
+				<section class="inner-container dashboard">
+					<div class="center">	
+						<h2>
+							House Sitter
+						</h2>										
+						<div class="tab">
+						  <button class="tablinks active" onclick="openHouse(event, 'Matches')">Your matches</button>
+						  <button class="tablinks" onclick="openHouse(event, 'Replies')">Replies <span class="stat-circle">0</span></button>
+						</div>
+					</div>
+					
+					<div class="tabouter">
+						<div class="center">
+							<div id="Matches" class="tabcontent" style="display:block;">
+								<div class="list-filters-header">
+									<div class="fliter-left">
+										<div class="container">
+											<div class="select-dropdown">
+												<button href="#" id="allRating" role="button" data-value="" class="select-dropdown__button filter-selected-item"><span>All ratings</span> <i class="zmdi zmdi-chevron-down"></i>
+												</button>
+												<ul id="allRatingContent" class="select-dropdown__list filter-select-items">
+													<li data-value="1" class="select-dropdown__list-item">
+									               		All ratings  
+										              
+										                <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"><!--?xml version="1.0" encoding="UTF-8"?-->
+															<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>
+													</li>
+													<li data-value="2" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <span class="ml-1 align-middle">only</span>   
+										               <span class="ml-2">(2)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span> -->
+													</li>
+													<li data-value="3" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png">
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+													<li data-value="4" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+													<li data-value="5" class="select-dropdown__list-item">	
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span> -->
+													</li>
+													<li data-value="6" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <span class="ml-1 align-middle">&amp; up</span>   
+										                <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+												</ul>
+											</div>
+											<div class="select-dropdown">
+												<button id="allResponnceButton" href="#" role="button" data-value="" class="select-dropdown__button filter-selected-item"><span>All response times </span> <i class="zmdi zmdi-chevron-down"></i>
+												</button>
+												<ul id="allResponnceContent" class="select-dropdown__list filter-select-items">
+													<li data-value="1" class="select-dropdown__list-item">
+									               		All response times   
+										              
+										                <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"><!--?xml version="1.0" encoding="UTF-8"?-->
+															<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>
+													</li>
+													<li data-value="2" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <span class="ml-1 align-middle">only</span>   
+										               <span class="ml-2">(2)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span> -->
+													</li>
+													<li data-value="3" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png">
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+													<li data-value="4" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+													<li data-value="5" class="select-dropdown__list-item">	
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										               <span class="ml-1 align-middle">&amp; up</span>   
+										               <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span> -->
+													</li>
+													<li data-value="6" class="select-dropdown__list-item">
+										               <img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <img class="img-fluid star star-grey" width="18" height="19" src="images/rating_star-grey.png" />
+										                <span class="ml-1 align-middle">&amp; up</span>   
+										                <span class="ml-2">(3)</span> 
+										              
+										                <!-- <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> --><!--?xml version="1.0" encoding="UTF-8"?-->
+															<!-- <svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	 -->
+													</li>
+												</ul>
+											</div>
+											<div class="filter-results-container">
+									            <span class="text-result">2 matches</span>
+									            <a href="#" class="js-reset-filters">Reset filters</a>
+									        </div>
+										</div>
+										
+									</div>
+									<div class="fliter-right">
+										<div class="container">
+											<div class="select-dropdown">
+												<button id="shortByButton" href="#" role="button" data-value="" class="select-dropdown__button filter-selected-item">Sort by: <span>Best match </span> <i class="zmdi zmdi-chevron-down"></i>
+												</button>
+												<ul id="shortByContent" class="select-dropdown__list filter-select-items">
+													<li data-value="1" class="select-dropdown__list-item selected">
+									               		Best match   
+										              
+										                <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"><!--?xml version="1.0" encoding="UTF-8"?-->
+															<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>
+													</li>
+													<li data-value="2" class="select-dropdown__list-item"> 
+										               Rating
+										              
+										                <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> <!--?xml version="1.0" encoding="UTF-8"?-->
+															<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>
+													</li>
+													<li data-value="3" class="select-dropdown__list-item">
+										              	Response time
+										                <span class="bark-svg-icon bsi-primary-dark-blue bsi-xs select-tick"> <!--?xml version="1.0" encoding="UTF-8"?-->
+															<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+															    <g id="Icon/check_small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+															        <g id="check_small">
+															            <rect id="base" fill-rule="nonzero" x="0" y="0" width="14" height="14"></rect>
+															            <polygon id="check-small" class="primary-color" points="6 10.42 2 6.42 3.41 5.01 6 7.59 10.59 3 12 4.42"></polygon>
+															        </g>
+															    </g>
+															</svg>
+														</span>	
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ul class="requests-list">
+									<li>
+										<div class="lists-img">
+											<a href="javascript:void(0)" title=""><img src="images/m-img.png" alt="" /></a>
+										</div>
+										<div class="lists-info">
+											<h3>House Sitter <span class="dates">1 hour ago</span></h3>											
+											<span class="rating">
+												<a href="#" class="rating-review">
+			                                        <div class="stars-img-container">
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-half" width="18" height="19" src="images/rating_star_half.png" />
+			                                        </div>
+			                                        <p class="reviews-count">(3)</p>
+			                                    </a>
+											</span>
+											<div class="seller-top-categories">
+			                                   <a href="javascript:void(0)" class="badge">House Cleaning</a>
+			                                   <a href="javascript:void(0)" class="badge">Deep Cleaning Services</a>
+			                                   <a href="javascript:void(0)" class="badge">House Sitting</a>
+			                                </div>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<div class="button-row">
+												<a href="javascript:void(0)" class="view-profile">View profile <svg width="15" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 13.7072L6.87868 12.293L11.1716 8.00008H0.585787V6.00008H11.1716L6.87868 1.70718L8.29289 0.292969L15 7.00008L8.29289 13.7072Z" fill="none" class="primary-color"></path>
+						                            </svg>
+						                        </a>
+												<button class="bttn primary-button view-bttn">Reply requested</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="lists-img">
+											<a href="javascript:void(0)" title=""><img src="images/602414efdf41b.jpg" alt="" /></a>
+										</div>
+										<div class="lists-info">
+											<h3>Cleaning Contractor <span class="dates">Tuesday, 24 Jan</span></h3>
+											<span class="rating">
+												<a href="#" class="rating-review">
+			                                        <div class="stars-img-container">
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-half" width="18" height="19" src="images/rating_star_half.png" />
+			                                        </div>
+			                                        <p class="reviews-count">(3)</p>
+			                                    </a>
+											</span>
+											<div class="seller-top-categories">
+			                                   <a href="javascript:void(0)" class="badge">House Cleaning</a>
+			                                   <a href="javascript:void(0)" class="badge">Deep Cleaning Services</a>
+			                                   <a href="javascript:void(0)" class="badge">House Sitting</a>
+			                                </div>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<div class="button-row">
+												<a href="javascript:void(0)" class="view-profile">View profile <svg width="15" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 13.7072L6.87868 12.293L11.1716 8.00008H0.585787V6.00008H11.1716L6.87868 1.70718L8.29289 0.292969L15 7.00008L8.29289 13.7072Z" fill="none" class="primary-color"></path>
+						                            </svg>
+						                        </a>
+												<button class="bttn primary-button view-bttn">Reply requested</button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="lists-img">
+											<a href="javascript:void(0)" title=""><img src="images/62df032b490a3.jpg" alt="" /></a>
+										</div>
+										<div class="lists-info">
+											<h3>Cleaner <span class="dates">Wednesday, 18 Jan</span></h3>
+											<span class="rating">
+												<a href="#" class="rating-review">
+			                                        <div class="stars-img-container">
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-full" width="18" height="19" src="images/rating_star.png" />
+			                                        	<img class="img-fluid star star-half" width="18" height="19" src="images/rating_star_half.png" />
+			                                        </div>
+			                                        <p class="reviews-count">(3)</p>
+			                                    </a>
+											</span>
+											<div class="seller-top-categories">
+			                                   <a href="javascript:void(0)" class="badge">House Cleaning</a>
+			                                   <a href="javascript:void(0)" class="badge">Deep Cleaning Services</a>
+			                                   <a href="javascript:void(0)" class="badge">House Sitting</a>
+			                                </div>
+											<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+											<div class="button-row">
+												<a href="javascript:void(0)" class="view-profile">View profile <svg width="15" height="12" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+						                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 13.7072L6.87868 12.293L11.1716 8.00008H0.585787V6.00008H11.1716L6.87868 1.70718L8.29289 0.292969L15 7.00008L8.29289 13.7072Z" fill="none" class="primary-color"></path>
+						                            </svg>
+						                        </a>
+												<button class="bttn primary-button view-bttn">Reply requested</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div id="Replies" class="tabcontent">
+								<div class="reply-inner">
+									<h4>No replies so far</h4>
+									<p><strong>Up to 5</strong> House Sitting can pay to reply to your listing.</p>
+									<div class="reply-img">
+										<img src="images/icons.svg" alt="">
+									</div>
+									<h5>We'll email you when you get a reply</h5>
+									<p>Contact your favourite matches from your list to get quicker replies:</p>	
+									<div class="button-row">
+										<button class="bttn primary-button view-bttn">View professionals</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="center">
+						<h2>Available Services</h2>
+						<div class="available-service-details">
+							<ul>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/house-cleaning-icon.png" alt=""></span>
+										<h5>House Cleaning</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/car-wash-icon.png" alt=""></span>
+										<h5>Car Washing</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/carpet-wash-icon.png" alt=""></span>
+										<h5>Carpet Washing</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/window-clean-icon.png" alt=""></span>
+										<h5>Window Cleaning</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/roof-clean-icon.png" alt=""></span>
+										<h5>Roof Cleaning</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/furniture-clean-icon.png" alt=""></span>
+										<h5>Furniture Cleaning</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/deep-clean-icon.png" alt=""></span>
+										<h5>Deep Cleaning</h5>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0)">
+										<span class="service-icon"><img src="images/others-service-icon.png" alt=""></span>
+										<h5>Other Services</h5>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				
+				<section class="inner-container contacts-row">
+					<div class="center">
+						<ul>
+							<li>
+								<span class="contacts-icon"><img src="images/location-icon.png" alt=""></span>
+								<div class="contacts-info">
+									<h5>Our Location</h5>
+									<p>1913 Diesel Street. <br>Western Cape</p>
+								</div>
+							</li>
+							<li>
+								<span class="contacts-icon"><img src="images/mail-icon.png" alt=""></span>
+								<div class="contacts-info">
+									<h5>Online Support</h5>
+									<p><a href="mailto:service@primhive.co.za">service@primhive.co.za</a></p>
+								</div>
+							</li>
+							<li>
+								<span class="contacts-icon"><img src="images/call-icon.png" alt=""></span>
+								<div class="contacts-info">
+									<h5>Have Any QUESTION?</h5>
+									<p><a href="javascript:void(0)" title="" class="call">+27 12 456 7890</a></p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<!-- /footer start -->
+			<footer>
+				<section class="inner-container footer">
+					<div class="center">
+						<div class="footer-top">
+							<div class="footer-left">
+								<div class="quick-links">
+									<h5>For Customers</h5>
+									<ul>
+										<li><a href="javascript:void(0)">Find a service provider</a></li>
+										<li><a href="javascript:void(0)">Login</a></li>
+									</ul>
+								</div>
+								<div class="quick-links">
+									<h5>Service Provider</h5>
+									<ul>
+										<li><a href="javascript:void(0)">Join As Service Provider</a></li>
+										<li><a href="javascript:void(0)">Pricing</a></li>
+										<li><a href="javascript:void(0)">Login</a></li>
+									</ul>
+								</div>
+								<div class="quick-links">
+									<h5>About</h5>
+									<ul>
+										<li><a href="javascript:void(0)">About PrimHive</a></li>
+										<li><a href="javascript:void(0)">Blog</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="footer-right">
+								<p><a href="javascript:void(0)">support@primhive.co.za</a></p>
+								<p><a href="javascript:void(0)" class="call">+91 12345 67890</a></p>
+								<p>(Mon-Sun 24/7 hours)</p>
+								<ul class="social-icons">
+									<li><a href="javascript:void(0)"><img src="images/twitter-icon.png" alt=""></a></li>
+									<li><a href="javascript:void(0)"><img src="images/fb-icon.png" alt=""></a></li>
+									<li><a href="javascript:void(0)"><img src="images/linkedin-icon.png" alt=""></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							<p>&copy; 2022 PrimHive. <a href="javascript:void(0)">Terms &amp; Conditions</a> / <a href="javascript:void(0)">Cookie policy</a> / <a href="javascript:void(0)">Privacy policy</a></p>
+						</div>
+					</div>
+				</section>
+			</footer>
+			<!-- /footer end -->
+
+			<div id="mySizeChartModal" class="ebcf_modal inner-modal" style="display: none;">
+				<div class="ebcf_modal-content">
+					<a href="javascript:void(0)" class="ebcf_close">X</a>
+					<h3>Place a new request</h3>
+					<label>What service do you need?</label>
+					<input type="text" name="" class="input-field" placeholder="e.g. Personal Trainers, House Cleaning">
+					<label>Where do you need it?</label>
+					<input type="text" name="" class="input-field" placeholder="pincode">
+					<a href="javascript:void(0)" class="verify-modal-btn bttn primary-button">Continue</a>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+	</body>
+</html>
