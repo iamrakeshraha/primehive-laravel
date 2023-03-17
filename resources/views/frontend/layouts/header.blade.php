@@ -17,7 +17,7 @@
         <!-- /header start -->
         <header class="top-header">
             <div class="center">
-                <a href="{{ url('/') }}" class="logo"><img src="{{ url('frontend/images/primhivelogo.png') }}"
+                <a href="{{ url('/') }}" class="logo"><img src="{{ asset('frontend/images/primhivelogo.png') }}"
                         alt=""></a>
                 <div id="toggle">
                     <div class="one"></div>

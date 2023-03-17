@@ -1,9 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\frontend\indexController;
-use App\Http\Controllers\frontend\loginController;
-use App\Http\Controllers\frontend\registerController;
+use App\Http\Controllers\frontend\IndexController;
+use App\Http\Controllers\frontend\LoginController;
+use App\Http\Controllers\frontend\RegisterController;
+use App\Http\Controllers\frontend\UserController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,7 +19,13 @@ use App\Http\Controllers\frontend\registerController;
 |
 */
 
-Route::get('/', [indexController::class, 'index' ]);
-Route::get('/login',[loginController::class, 'index' ]);
-Route::get('/register',[registerController::class, 'index' ]);
+
+
+// Route::prefix('user')->group(function () {
+//     Route::get('/dashboard',[UserController::class, 'index' ])->Name('user.dashboard');
+// });
+
+// Route::get('/', [indexController::class, 'index' ]);
+// Route::get('/login',[loginController::class, 'index' ]);
+// Route::get('/register',[registerController::class, 'index' ]);
 
